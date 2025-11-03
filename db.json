@@ -1,0 +1,124 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Learn Angular",
+      "status": "pending",
+      "dateCreated": "2025-10-01T00:00:00.000Z",
+      "dueDate": "2025-10-10T00:00:00.000Z",
+      "description": "Familiarize with Angular basics and environment setup."
+    },
+    {
+      "id": "2",
+      "title": "Build Task Manager",
+      "status": "completed",
+      "dateCreated": "2025-10-02T00:00:00.000Z",
+      "dueDate": "2025-10-12T00:00:00.000Z",
+      "description": "Develop a SPA task manager with detailed UI."
+    },
+    {
+      "id": "3",
+      "title": "Write unit tests",
+      "status": "pending",
+      "dateCreated": "2025-10-03T00:00:00.000Z",
+      "dueDate": "2025-10-13T00:00:00.000Z",
+      "description": "Write tests for all components and services."
+    },
+    {
+      "id": "4",
+      "title": "Fix bugs",
+      "status": "in progress",
+      "dateCreated": "2025-10-04T00:00:00.000Z",
+      "dueDate": "2025-10-14T00:00:00.000Z",
+      "description": "Fix UI bugs reported by QA team."
+    },
+    {
+      "id": "5",
+      "title": "Add login feature",
+      "status": "pending",
+      "dateCreated": "2025-10-05T00:00:00.000Z",
+      "dueDate": "2025-10-15T00:00:00.000Z",
+      "description": "Implement user authentication and authorization."
+    },
+    {
+      "id": "6",
+      "title": "Improve performance",
+      "status": "pending",
+      "dateCreated": "2025-10-06T00:00:00.000Z",
+      "dueDate": "2025-10-16T00:00:00.000Z",
+      "description": "Use lazy loading to optimize app startup."
+    },
+    {
+      "id": "7",
+      "title": "Design database schema",
+      "status": "completed",
+      "dateCreated": "2025-10-07T00:00:00.000Z",
+      "dueDate": "2025-10-17T00:00:00.000Z",
+      "description": "Design tables and relationships for task data."
+    },
+    {
+      "id": "8",
+      "title": "Integrate REST API",
+      "status": "in progress",
+      "dateCreated": "2025-10-08T00:00:00.000Z",
+      "dueDate": "2025-10-18T00:00:00.000Z",
+      "description": "Connect front-end with backend services."
+    },
+    {
+      "id": "9",
+      "title": "Create dashboard UI",
+      "status": "pending",
+      "dateCreated": "2025-10-09T00:00:00.000Z",
+      "dueDate": "2025-10-19T00:00:00.000Z",
+      "description": "Develop dashboard showing user stats and tasks."
+    },
+    {
+      "id": "10",
+      "title": "Setup CI/CD pipeline",
+      "status": "pending",
+      "dateCreated": "2025-10-10T00:00:00.000Z",
+      "dueDate": "2025-10-20T00:00:00.000Z",
+      "description": "Configure automated build and deployment."
+    },
+    {
+      "id": "11",
+      "title": "Deploy to production",
+      "status": "pending",
+      "dateCreated": "2025-10-11T00:00:00.000Z",
+      "dueDate": "2025-10-21T00:00:00.000Z",
+      "description": "Deploy latest version of the app.vv"
+    },
+    {
+      "id": "12",
+      "title": "Write documentation",
+      "status": "completed",
+      "dateCreated": "2025-10-12T00:00:00.000Z",
+      "dueDate": "2025-10-22T00:00:00.000Z",
+      "description": "Document app features and API usage."
+    },
+    {
+      "id": "13",
+      "title": "User feedback review",
+      "status": "in progress",
+      "dateCreated": "2025-10-13T00:00:00.000Z",
+      "dueDate": "2025-10-23T00:00:00.000Z",
+      "description": "Analyze feedback and plan improvements."
+    },
+    {
+      "id": "14",
+      "title": "Improve UI/UX",
+      "status": "pending",
+      "dateCreated": "2025-10-14T00:00:00.000Z",
+      "dueDate": "2025-10-24T00:00:00.000Z",
+      "description": "Refine interface for better user experience."
+    },
+    {
+      "id": "15",
+      "title": "Backup data",
+      "status": "pending",
+      "dateCreated": "2025-10-15T00:00:00.000Z",
+      "dueDate": "2025-10-25T00:00:00.000Z",
+      "description": "Setup regular database backup process."
+    }
+  ]
+}

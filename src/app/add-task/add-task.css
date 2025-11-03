@@ -1,0 +1,137 @@
+/* Container for form and button (optional) */
+:host {
+  display: block;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add New Task button */
+button {
+  background-color: #007bff; /* Bootstrap blue */
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+button:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: inset 0 0 8px #ddd;
+}
+
+/* Label styling */
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* Input and textarea styling, including due date input */
+input[type='text'],
+input[type='datetime-local'],
+textarea {
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus styles for all inputs */
+input[type='text']:focus,
+input[type='date']:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Additional styling for label and input alignment if needed */
+label > input[type='date'] {
+  margin-top: 0.3rem;
+}
+
+/* Confirm and Cancel buttons styling (if inside form) */
+form > button {
+  background-color: #28a745; /* Green for confirm */
+  color: white;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px;
+}
+
+form > .button-group {
+  display: flex;
+  gap: 0.7rem;
+}
+
+form > .button-group > button.confirm {
+  order: 2; /* Confirm button second */
+}
+form > .button-group > button.cancel {
+  order: 1; /* Cancel button first */
+  background-color: red;
+}
+
+form > button:last-child {
+  background-color: #dc3545; /* Red for delete or cancel */
+}
+
+form > button:hover {
+  filter: brightness(0.9);
+}
+
+form > button:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Layout adjustments for spacing */
+form > button {
+  margin-top: 0.5rem;
+}
+
+form > button + button {
+  margin-left: 0.7rem;
+}
+
+form > div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.7rem;
+}

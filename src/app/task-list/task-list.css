@@ -1,0 +1,78 @@
+/* Container title */
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+/* Main table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Cell padding and border */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover row effect */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Align last column (actions) content right */
+td:last-child {
+  white-space: nowrap;
+  width: 110px;
+  text-align: left;
+}
+
+/* Description column max width */
+td:nth-child(4) {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Buttons inside table */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 8px;
+  transition: color 0.3s;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: red;
+}
+
+/* --- Task List Title --- */
+.task-list-title {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 6px;
+}

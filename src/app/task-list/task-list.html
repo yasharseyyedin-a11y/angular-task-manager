@@ -1,0 +1,38 @@
+<app-add-task [id]="getCount()" (taskAdded)="addTask($event)"></app-add-task>
+
+<h2>Task List</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date Created</th>
+            <th>Due Date</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (task of this.paginatedTasks; track task.id) {
+        <tr>
+            <td>{{ task.title }}</td>
+            <td>{{ task.dateCreated | date: 'medium' }}</td>
+            <td>{{ task.dueDate | date: 'medium' }}</td>
+            <td>{{ task.description | slice:0:50 }}{{task.description.length > 50 ?
+                '...' : ''}}</td>
+            <!-- Truncate description -->
+            <td>
+                <button (click)="editTask(task.id)" title="Edit task" aria-label="Edit task">✏️</button>
+                <button (click)="deleteTask(task.id)" title="Delete task" aria-label="Delete task">🗑️</button>
+                <button (click)="viewDetails(task.id)" title="View details" aria-label="View details">ℹ️</button>
+            </td>
+        </tr>
+        } @empty {
+        <tr>
+            <td colspan="5">There are no items.</td> <!-- colspan updated to 4 -->
+        </tr>
+        }
+    </tbody>
+</table>
+
+<app-pagination [totalPages]="this.totalPages" [(currentPage)]="this.currentPage"
+    [(rowsPerPage)]="this.rowsPerPage"></app-pagination>

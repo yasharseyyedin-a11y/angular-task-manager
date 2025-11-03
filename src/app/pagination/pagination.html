@@ -1,0 +1,23 @@
+<div class="pagination-container">
+    <!-- Rows per page input -->
+    <div class="rows-per-page">
+        <label for="rowsPerPage">Rows per page:</label>
+        <input id="rowsPerPage" type="number" [value]="rowsPerPage()" min="1" max="20"
+            (input)="onRowsPerPageChange($any($event.target).valueAsNumber || 1)" />
+    </div>
+
+    <!-- Pagination Controls -->
+    <div class="pagination">
+        <button (click)="goToPage(currentPage() - 1)" [disabled]="currentPage() === 1">
+            Previous
+        </button>
+        <button *ngFor="let page of [].constructor(totalPages()); let i = index" (click)="goToPage(i + 1)"
+            [disabled]="currentPage() === i + 1">
+            {{ i + 1 }}
+        </button>
+
+        <button (click)="goToPage(currentPage() + 1)" [disabled]="currentPage() === totalPages()">
+            Next
+        </button>
+    </div>
+</div>

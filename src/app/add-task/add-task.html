@@ -1,0 +1,25 @@
+<button (click)="onAddNewTask()">Add New Task</button>
+
+@if(showForm()) {
+<form [formGroup]="taskForm">
+    <label>Title
+        <input formControlName="title" type="text" />
+    </label>
+
+    <label>Due Date
+        <input formControlName="dueDate" type="datetime-local" />
+    </label>
+    
+    <label>Description
+        <textarea formControlName="description"></textarea>
+    </label>
+
+    <div class="button-group">
+        <button type="button" class="cancel" (click)="onCancel()">Cancel</button>
+        <button type="button" class="confirm" (click)="onConfirm()">Confirm</button>
+    </div>
+</form>
+
+} @else {
+
+}
